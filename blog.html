@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/all.min.css" />
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <!-- icon -->
+  <link rel="icon" href="./img/favicon.ico">
+  <title>Greens Garden</title>
+</head>
+<body>
+  <!-- start header -->
+  <header>
+    <div class="container">
+      <div class="top-header">
+        <ul>
+          <li>
+            <i class="fa-solid fa-phone"></i>
+            <span>Call Us: +201003573151</span>
+          </li>
+          <li>
+
+            <div class="dropdown ">
+              <div class="select">
+                <i class="fa-regular fa-user"></i>
+                <span>Account</span>
+                <i class="fa-solid fa-angle-down"></i>
+              </div>
+              <ul class="menu" id="not-existing-account">
+                <li><a href="./register.html">Register</a></li>
+                <li><a href="./login.html">Sign in</a></li>
+              </ul>
+              <ul class="menu" id="existing-account">
+                <li>Information</li>
+                <li>My Account</li>
+                <li><a href="./wishlist.html">My wishlists</a></li>
+                <li>Sign Out</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="wrapper-header">
+        <div class="wrraper-shopping-cart">
+          <div class="shopping-cart dropdown">
+            <div class="select">
+              <div class="img-icon">
+                <img src="./img/shopping-bag.png" alt="shopping-bag" />
+              </div>
+              <div class="text-shop ">
+                <div class="title">
+                  <span>Shopping Cart</span>
+                </div>
+                <div class="total-price">
+                  <span class="total-products-price">0</span>
+                  <span>-</span>
+                  <span class="number-product">0<span></span>item</span>
+                </div>
+
+              </div>
+            </div>
+            <div class="dropdown-menu menu">
+              <p class="empty-products">There are no items in your cart.</p>
+              <div class="items exist-products" id="exist-products">
+                <ul class="cart-products"></ul>
+                <div class="total">
+                  <span>total</span>
+                  <span class="total-products-price">0</span>
+                </div>
+                <div class="buttons">
+                  <button><a href="./check-out.html">check out</a></button>
+                  <button><a href="./cart.html">View Cart</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="logo">
+          <div class="img">
+            <img src="./img/logo.jpg" alt="logo-img" />
+          </div>
+        </div>
+        <div class="icons-header">
+          <div class="dropdown">
+            <div class="cart-icon">
+              <div class="select">
+                <i class="fa fa-shopping-bag"></i>
+                <span class="number-product">0</span>
+              </div>
+              <div class="dropdown-menu menu">
+                <p class="empty-products">There are no items in your cart.</p>
+                <div class="items exist-products" id="exist-products">
+                  <ul class="cart-products"></ul>
+                  <div class="total">
+                    <span>total</span>
+                    <span class="total-products-price">0</span>
+                  </div>
+                  <div class="buttons">
+                    <button><a href="./check-out.html">check out</a></button>
+                    <button><a href="./cart.html">View Cart</a></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="search">
+            <div class="icon-search" id="icon-search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="wrapper-search" id="wrapper-search">
+              <div class="wrapper-input-search">
+                <input type="search" placeholder="Search For Product..." id="search" />
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+              <div class="result">
+                <ul id="result">
+
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="nav" id="bars">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+      </div>
+      <div class="wrapper-nav-bar" id="navbar">
+        <div class="nav-bar" id="navbar-links">
+          <div class="top-nav-bar">
+            <i class="fa-solid fa-xmark" id="close"></i>
+          </div>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./flowers-products.html">Shop</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- end header -->
+  <!-- <section class="nav-links-page">
+    <div class="container">
+      <div class="links-page">
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <span>/</span>
+          <li><a href="#" class="active">Blog</a></li>
+        </ul>
+      </div>
+    </div>
+  </section> -->
+  <!-- start section posts -->
+  <section class="all-posts">
+    <div class="container">
+      <div class="wrapper-posts">
+         <aside>
+          <div class="blog-archiev box">
+            <div class="head-box">
+              <h3><a href="#">BLOG ARCHIVE</a></h3>
+            </div>
+            <div class="body-box">
+              <a href="#">2024 <br/> may</a>
+            </div>
+          </div>
+          <div class="blog-category box">
+            <div class="head-box">
+              <h3><a href="#">CATEGORY</a></h3>
+            </div>
+            <div class="body-box">
+              <span class="select">Select Category</span>
+            </div>
+          </div>
+          <div class="blog-popular-posts box">
+            <div class="head-box">
+              <h3><a href="#">POPULAR ARTICLES</a></h3>
+            </div>
+            <div class="body-box">
+              <ul>
+                <li>
+                  <div class="img">
+                    <img src="./img/blog-1.jpg" alt="blog-img">
+                  </div>
+                  <div class="text-post">
+                    <a href="#">Consectetur Adipiscing</a>
+                    <span>28/05/2024 <br/> 10:24:44</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="img">
+                    <img src="./img/blog-3.jpg" alt="blog-img">
+                  </div>
+                  <div class="text-post">
+                    <a href="#">Consectetur Adipiscing</a>
+                    <span>28/05/2024 <br/> 10:24:44</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="blog-search box">
+            <div class="head-box">
+              <h3><a href="#">BLOG SEARCH</a></h3>
+            </div>
+            <div class="body-box">
+              <div class="search-input">
+                <input type="search" name="posts" id="posts" placeholder="Search">
+                <div class="search">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside> 
+        <div class="posts">
+          <div class="col">
+            <div class="post">
+              <div class="img-post">
+                <img src="./img/blog-1.jpg" alt="blog-1">
+              </div>
+              <ul>
+                <li>
+                  <i class="fa-solid fa-user"></i>
+                  <span>Admin</span>
+                </li>
+                <li>
+                  <i class="fa-regular fa-comments"></i>
+                  <span>0 comments</span>
+                </li>
+                <li>
+                  <i class="fa-regular fa-eye"></i>
+                  <span>1383</span>
+                </li>
+              </ul>
+              <h3><a href="#">Consectetur Adipiscing</a></h3>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type an</p>
+              <button>READ MORE</button>
+            </div>
+            <div class="post">
+              <div class="img-post">
+                <img src="./img/blog-2.jpg" alt="blog-2">
+              </div>
+              <ul>
+                <li>
+                  <i class="fa-solid fa-user"></i>
+                  <span>Admin</span>
+                </li>
+                <li>
+                  <i class="fa-regular fa-comments"></i>
+                  <span>0 comments</span>
+                </li>
+                <li>
+                  <i class="fa-regular fa-eye"></i>
+                  <span>1383</span>
+                </li>
+              </ul>
+              <h3><a href="#">Lorem Ipsum Dolo</a></h3>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type an</p>
+              <button>READ MORE</button>
+            </div>
+            <div class="post">
+              <div class="img-post">
+                <img src="./img/blog-3.jpg" alt="blog-3">
+              </div>
+              <ul>
+                <li>
+                  <i class="fa-solid fa-user"></i>
+                  <span>Admin</span>
+                </li>
+                <li>
+                  <i class="fa-regular fa-comments"></i>
+                  <span>0 comments</span>
+                </li>
+                <li>
+                  <i class="fa-regular fa-eye"></i>
+                  <span>1383</span>
+                </li>
+              </ul>
+              <h3><a href="#">Lorem Ipsum Dolor</a></h3>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type an</p>
+              <button>READ MORE</button>
+            </div>
+          </div>
+          <div class="col">
+            <div class="post">
+              <div class="img-post">
+                <img src="./img/blog-4.jpg" alt="blog-1">
+              </div>
+              <ul>
+                <li>
+                  <i class="fa-solid fa-user"></i>
+                  <span>Admin</span>
+                </li>
+                <li>
+                  <i class="fa-regular fa-comments"></i>
+                  <span>0 comments</span>
+                </li>
+                <li>
+                  <i class="fa-regular fa-eye"></i>
+                  <span>1383</span>
+                </li>
+              </ul>
+              <h3><a href="#">Lorem Ipsum Dolor Sit Amet</a></h3>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type an</p>
+              <button>READ MORE</button>
+            </div>
+            <div class="post">
+              <div class="img-post">
+                <img src="./img/blog-5.jpg" alt="blog-1">
+              </div>
+              <ul>
+                <li>
+                  <i class="fa-solid fa-user"></i>
+                  <span>Admin</span>
+                </li>
+                <li>
+                  <i class="fa-regular fa-comments"></i>
+                  <span>0 comments</span>
+                </li>
+                <li>
+                  <i class="fa-regular fa-eye"></i>
+                  <span>1383</span>
+                </li>
+              </ul>
+              <h3><a href="#">Consectetur Adipiscing</a></h3>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type an</p>
+              <button>READ MORE</button>
+            </div>
+            <div class="post">
+              <div class="img-post">
+                <img src="./img/blog-1.jpg" alt="blog-1">
+              </div>
+              <ul>
+                <li>
+                  <i class="fa-solid fa-user"></i>
+                  <span>Admin</span>
+                </li>
+                <li>
+                  <i class="fa-regular fa-comments"></i>
+                  <span>0 comments</span>
+                </li>
+                <li>
+                  <i class="fa-regular fa-eye"></i>
+                  <span>1383</span>
+                </li>
+              </ul>
+              <h3><a href="#">Consectetur Adipiscing</a></h3>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type an</p>
+              <button>READ MORE</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end section posts -->
+  <!-- start section footer -->
+   <footer>
+    <div class="container">
+      <div class="wrapper-footer">
+        <div class="col">
+          <div class="groups-link">
+            <div class="group-link"">
+                <h3>INFORMATION</h3>
+                <ul>
+                  <li><a href=" #">Delivery</a></li>
+              <li><a href="#">Legal Notice</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Secure Payment</a></li>
+              <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="group-link"">
+                <h3>MY ACCOUNT</h3>
+                <ul>
+                  <li><a href=" #">Personal Info</a></li>
+              <li><a href="#">Orders</a></li>
+              <li><a href="#">Credit Slips</a></li>
+              <li><a href="#">Addresses</a></li>
+              <li><a href="#">My Wishlists</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="img">
+            <img src="./img/logo-light.png" alt="logo">
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt lorem consectetur
+            tempor incididunt enim ad minim simply random text. It has pieceveniam.</p>
+          <div class="social-media">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-google-plus-g"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-pinterest-p"></i>
+          </div>
+        </div>
+        <div class="col">
+          <h3>NEWSLETTER</h3>
+          <p>Subscribe to our newsletters now and stay up to date with new collections and exclusive offers.</p>
+          <div class="input-email">
+            <input type="email" name="email" id="email" placeholder="Your email address">
+            <button><i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+          <div class="copyright ">
+            Greated By <span>Magdy Alhadray</span>
+            <div>&copy;2024 - <span>Greens Garden</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer> 
+  <!-- end section footer -->
+  <div class="loading">
+    <div class="img">
+      <img src="./img/e13acccff048dbd34cdd7a3c539a68eb.gif" alt="loading">
+    </div>
+  </div>
+  <script type="module" src="./javascript/blog.js"></script>
+</body>
+
+</html>

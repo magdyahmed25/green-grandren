@@ -1,0 +1,108 @@
+.cart {
+  padding-top: $padding-top;
+  padding-bottom: $padding-bottom;
+  .wrapper-cart {
+    display: flex;
+    flex-wrap: wrap;
+    .col:first-child {
+      flex-basis: calc(70% - 10px);
+      margin-right: 10px;
+      background-color: $color-white;
+      border-radius: 10px;
+      border: 1px solid $color-border;
+      height: fit-content;
+      @include maxMedium{
+        flex-basis: 100%;
+      margin-right: 0;
+      }
+      .shopping-cart {
+        .heading-cart {
+          border-bottom: 1px solid $color-border;
+          padding: 10px;
+          h1 {
+            font-size: 20px;
+          }
+        }
+
+        ul {
+          //margin-top: 20px;
+          padding-top: $padding-top;
+          padding-bottom: $padding-bottom;
+          li {
+            display: flex;
+            margin-bottom: 10px;
+            @include maxMedium{
+             flex-direction: column;
+             margin-bottom: 25px;
+             border-bottom: 1px solid $color-border;
+            }
+            .column {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              flex-basis: calc(100% - 10px);
+              margin: 0 5px;
+              @include maxMedium{
+               
+                margin:7px 5px;
+               }
+              &:nth-child(2) {
+                flex-direction: column;
+              }
+            }
+
+            .img {
+
+              img {
+                width: 75px;
+                height: 75px;
+                object-fit: contain;
+              }
+            }
+
+            .wrapper-info {
+              .title {
+                h3 {
+                  font-size: 14px;
+                  margin-bottom: 5px;
+                }
+              }
+
+              .price {
+                span {
+                  color: $main-color;
+                  font-weight: 500;
+                }
+              }
+            }
+
+            .counter {
+              border: 1px solid $color-border;
+
+              .text-count {
+                width: 80%;
+                display: flex;
+                justify-content: center;
+              }
+
+              .counts {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                border: 1px solid #e5e5e5;
+                height: 100%;
+                padding: 5px 17px;
+
+                span {
+                  cursor: pointer;
+                }
+              }
+            }
+            
+          }
+        }
+      }
+    }
+  }
+}

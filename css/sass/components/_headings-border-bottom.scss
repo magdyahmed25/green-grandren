@@ -1,0 +1,21 @@
+.heading-section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  h2{
+    position: relative;
+    padding-bottom: 20px;
+    border-bottom: 1px solid $color-border;
+    font-size: 30px;
+    &::after{
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 50%;
+      height: 3px;
+      background-color: $main-color;
+    }
+  }
+}

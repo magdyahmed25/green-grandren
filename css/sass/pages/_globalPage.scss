@@ -1,0 +1,37 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+::-webkit-scrollbar{
+  width: 5px;
+}
+::-webkit-scrollbar-track{
+  background-color: #fff;
+}
+::-webkit-scrollbar-thumb{
+  background-color: #e5e5e5;
+}
+body{
+  overflow-x: hidden;
+  font: {
+    family: 'Jost', sans-serif;
+    size: 16px;
+  }
+  background-color: #f7f7f7;
+}
+ul , ol {
+  list-style: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+img{
+  max-width: 100%;
+}
+h1, h2, h3, h4, h5, h6{
+  font-weight: 500;
+}
+input , textarea{
+  outline: none;
+}

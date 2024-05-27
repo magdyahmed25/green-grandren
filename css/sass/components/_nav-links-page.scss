@@ -1,0 +1,32 @@
+.nav-links-page {
+  padding-top: $padding-top;
+  // padding-bottom: $padding-bottom;
+
+  .links-page {
+    padding: 15px 20px 15px 0;
+    background-color: $color-white;
+    border: 1px solid $color-border;
+    border-radius: 5px;
+
+    ul {
+      display: flex;
+      justify-content: end;
+      align-items: center;
+
+      li {
+        position: relative;
+        margin: 0 10px;
+
+        a {
+          display: inline-block;
+          color: #222222;
+          font-size: 14px;
+        }
+
+        a.active {
+          color: $main-color;
+        }
+      }
+    }
+  }
+}

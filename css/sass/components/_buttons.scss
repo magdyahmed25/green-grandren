@@ -1,0 +1,18 @@
+button {
+  border: none;
+  outline: none;
+  background-color: $main-color;
+  color: $color-white;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  cursor: pointer;
+  @include maxExtraSmall{
+    padding: 5px 15px;
+    font-size: 12px;
+  }
+}
+
+

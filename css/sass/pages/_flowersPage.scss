@@ -1,0 +1,43 @@
+.flowers {
+  .wrapper-flowers {
+    .products {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      @include maxSmall{
+        width: 100%;
+      }
+    }
+    .card {
+      width: calc((100% / 3) - 10px);
+      margin: 5px;
+      @include maxMedium{
+        width: calc((100% / 2) - 10px);
+      }
+      @include maxSmall{
+        width: 100%;
+        margin:5px 0;
+      }
+    }
+    .pagination{
+      li{
+        padding: 15px;
+        border: 1px solid $color-border;
+        font-weight: 600;
+        width: 20px;
+        height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin:5px;
+        border-radius: 50%;
+        cursor: pointer;
+        &.active{
+          background-color: $main-color;
+          color: $color-white;
+        }
+      }
+     
+    }
+  }
+}

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/all.min.css" />
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <!-- icon -->
+  <link rel="icon" href="./img/favicon.ico">
+  <title>Greens Garden</title>
+</head>
+
+<body>
+  <!-- start header -->
+  <header>
+    <div class="container">
+      <div class="top-header">
+        <ul>
+          <li>
+            <i class="fa-solid fa-phone"></i>
+            <span>Call Us: +201003573151</span>
+          </li>
+          <li>
+
+            <div class="dropdown " >
+              <div class="select">
+                <i class="fa-regular fa-user"></i>
+                <span>Account</span>
+                <i class="fa-solid fa-angle-down"></i>
+              </div>
+              <ul class="menu" id="not-existing-account">
+                <li><a href="./register.html">Register</a></li>
+                <li><a href="./login.html">Sign in</a></li>
+              </ul>
+              <ul class="menu"  id="existing-account">
+                <li>Information</li>
+                <li>My Account</li>
+                <li><a href="./wishlist.html">My wishlists</a></li>
+                <li>Sign Out</li>
+              </ul>
+            </div>
+           
+          </li>
+          
+        </ul>
+      </div> 
+      <div class="wrapper-header">
+        <div class="wrraper-shopping-cart">
+        
+        </div>
+        <div class="logo">
+          <div class="img">
+            <img src="./img/logo.jpg" alt="logo-img" />
+          </div>
+        </div>
+        <div class="icons-header">
+         >
+          <div class="nav" id="bars">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+      </div>
+      <div class="wrapper-nav-bar" id="navbar">
+        <div class="nav-bar" id="navbar-links">
+          <div class="top-nav-bar">
+            <i class="fa-solid fa-xmark" id="close"></i>
+          </div>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./flowers-products.html">Shop</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- end header -->
+  <section class="nav-links-page">
+    <div class="container">
+      <div class="links-page">
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <span>/</span>
+          <li><a href="./cart.html" class="active"> Create an account</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+   <!-- start section footer -->
+  <section class="register">
+    <div class="container">
+      <div class="wrapper-checkout">
+          <div class="personal-information">
+            <ul class="nav">
+              <li>Already have an account? </li>
+              <li><a href="">Log in instead!</a></li>
+            </ul>
+            <form action="#" id="register-form">
+              <div class="block-input">
+                <div class="col">
+                  <span>Social title</span>
+                </div>
+                <div class="col">
+                  <ul class="check-box">
+                    <li>
+                      <input type="radio" name="gender" id="mr" value="mr">
+                      <label for="mr" class="radio">Mr.</label>
+                    </li>
+                    <li>
+                      <input type="radio" name="gender" id="mrs" value="mrs">
+                      <label for="mrs" class="radio">Mrs.</label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="block-input">
+                <div class="col">
+                  <label for="first-name">First name</label>
+                </div>
+                <div class="col">
+                  <div class="wrapper-input">
+                    <div class="wrapper-valid-input">
+                      <input type="text" name="first-name" id="first-name">
+                      <span class="valid-icon">✔️</span>
+                    </div>
+                    <p>Only letters and the dot (.) character, followed by a space, are allowed.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="block-input">
+                <div class="col">
+                  <label for="last-name">Last name</label>
+                </div>
+                <div class="col">
+                  <div class="wrapper-input">
+                    <div class="wrapper-valid-input">
+                      <input type="text" name="last-name" id ="last-name">
+                      <span class="valid-icon">✔️</span>
+                    </div>
+                    
+                    <p>Only letters and the dot (.) character, followed by a space, are allowed.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="block-input">
+                <div class="col">
+                  <label for="email">Email</label>
+                </div>
+                <div class="col">
+                  <div class="wrapper-input">
+                    <div class="wrapper-valid-input">
+                      <input type="email" name="email" id="email-register"/>
+                      <span class="valid-icon">✔️</span>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="block-input">
+                <div class="col">
+                  <label for="password">Password</label>
+                </div>
+                <div class="col">
+                  <div class="wrapper-input ">
+                    <div class="input-option">
+                      <input type="password" name="password" id="password-register">
+                      <span id="button-password">Show</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="block-input ">
+                <div class="col">
+                  <label for="birthdate">Birthdate</label>
+                </div>
+                <div class="col">
+                  <div class="wrapper-input">
+                    <div class="input-option">
+                      <input type="text" name="birthdate" id="birthdate" placeholder="MM/DD/YYYY">
+                    </div>
+                    <p>(E.g.: 05/31/1970)</p>
+                  </div>
+                </div>
+              </div>
+              <div class="block-input options">
+                <div class="col"></div>
+                <div class="col">
+                  <div class="wrapper-option">
+                    <input type="radio" name="recieved" id="recieved">
+                    <label for="recieved" class="radio">Receive offers from our partners</label>
+                  </div>
+                  <div class="wrapper-option">
+                    <input type="radio" name="data-privacy" id="data-privacy" data-index="${i}">
+                    <label for="data-privacy" class="radio">Customer data privacy</label>
+                    <br/>
+                    <em>
+                      The personal data you provide is used to answer queries, process orders or allow access to specific information. You have the right to modify and delete all the personal information found in the "My Account" page.
+                    </em>
+                  </div>
+                  <div class="wrapper-option">
+                    <input type="radio" name="sign-up" id="sign-up">
+                    <label for="sign-up" class="radio">Sign up for our newsletter</label>
+                    <br/>
+                    <em>
+                      You may unsubscribe at any moment. For that purpose, please find our contact info in the legal notice.
+                    </em>
+                  </div>
+                  <div class="wrapper-option">
+                    <input type="radio" name="privacy-policy" id="privacy-policy" >
+                    <label for="privacy-policy" class="radio"> I agree to the terms and conditions and the privacy policy</label>
+                  </div>
+                </div>
+              </div>
+              <div class="onsubmit">
+                <input type="submit" value="CONTINUE" id="register">
+              </div>
+            </form>
+          </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <div class="wrapper-footer">
+        <div class="col">
+          <div class="groups-link">
+            <div class="group-link"">
+                <h3>INFORMATION</h3>
+                <ul>
+                  <li><a href=" #">Delivery</a></li>
+              <li><a href="#">Legal Notice</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Secure Payment</a></li>
+              <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="group-link"">
+                <h3>MY ACCOUNT</h3>
+                <ul>
+                  <li><a href=" #">Personal Info</a></li>
+              <li><a href="#">Orders</a></li>
+              <li><a href="#">Credit Slips</a></li>
+              <li><a href="#">Addresses</a></li>
+              <li><a href="#">My Wishlists</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="img">
+            <img src="./img/logo-light.png" alt="logo">
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt lorem consectetur
+            tempor incididunt enim ad minim simply random text. It has pieceveniam.</p>
+          <div class="social-media">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-google-plus-g"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-pinterest-p"></i>
+          </div>
+        </div>
+        <div class="col">
+          <h3>NEWSLETTER</h3>
+          <p>Subscribe to our newsletters now and stay up to date with new collections and exclusive offers.</p>
+          <div class="input-email">
+            <input type="email" name="email" id="email" placeholder="Your email address">
+            <button><i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+          <div class="copyright ">
+            Greated By <span>Magdy Alhadray</span>
+            <div>&copy;2024 - <span>Greens Garden</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="message" id="have-account">
+    <p class="have-account">
+      Email is invalid or already taken
+    </p>
+  </div>
+  <!-- end section footer -->
+  <div class="loading">
+    <div class="img">
+      <img src="./img/e13acccff048dbd34cdd7a3c539a68eb.gif" alt="loading">
+    </div>
+  </div>
+  <script src="./javascript/register.js" type="module"></script>
+ 
+</body>
+
+</html>

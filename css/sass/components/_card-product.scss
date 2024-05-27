@@ -1,0 +1,86 @@
+.card{
+  background-color: $color-white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  border: 1px solid $color-border;
+  position: relative;
+  overflow: hidden;
+  margin: 5px;
+  .icons-card{
+    position: absolute;
+    left: -50%;
+    top: 0;
+    transition: all 0.5s linear;
+    
+    i{
+      display: block;
+      margin: 15px 0;
+      background-color: #f7f7f7;
+      padding: 10px;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+  }
+  .img-card{
+    img{
+      width: 200px;
+      height: 200px;
+      object-fit: contain;
+    }
+  }
+  .rating {
+    
+    i {
+      color: $color-orange;
+      font-size: 14px;
+    }
+  }
+  .body-card{
+    border-top: 1px solid $color-border;
+    text-align: center;
+    padding: 20px 0;
+    margin: 20px 30px;
+    .title {
+      margin-bottom: 18px;
+      h3 {
+        line-height: 30px;
+       height: 50px;
+      }
+    }
+    .price {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 5px 0;
+      .current-price {
+        margin-right: 10px;
+        font-weight: 500;
+        // font-size: 2px;
+        color: $main-color;
+      }
+      .before-price {
+        margin-right: 20px;
+        text-decoration: line-through;
+        color: $color-light-gray;
+        font-weight: 500;
+      }
+    }
+  }
+  &:hover > .icons-card{
+    left: 20px;
+  }
+  .checked-login{
+    position: absolute;
+    background-color: $color-black;
+    color: $color-white;
+    padding: 10px;
+    border-radius: 5px;
+    top: -100%;
+    transition: all 0.5s linear;
+  }
+  .show-message{
+    top: 10px;
+  }
+}

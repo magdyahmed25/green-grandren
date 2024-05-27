@@ -1,0 +1,125 @@
+.product-details{
+  padding-top: $padding-top;
+  padding-bottom: $padding-bottom;
+  .content-details{
+    background-color: $color-white;
+    .card-details {
+      // padding-top: $padding-top;
+      // padding-bottom: $padding-bottom;
+      padding: $padding-top 40px $padding-bottom;
+      display: flex;
+      align-items: center;
+      // height: 100vh;
+      .img-product {
+        flex-basis: calc(40% - 5px);
+        border: 1px solid $color-border;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        margin-right: 10px;
+  
+        img {
+          width: 200px;
+        }
+      }
+  
+      .text-card {
+        flex-basis: calc(60% - 5px);
+        margin-left: 10px;
+        padding: 10px;
+        h3 {
+          font-size: 24px;
+          line-height: 26px;
+          text-transform: capitalize;
+          margin: 10px 0 20px;
+        }
+  
+        .price {
+          .price-product{
+            font-size: 24px;
+            color: $main-color;
+            font-weight: 500;
+          }
+        }
+  
+        p {
+          margin: 5px;
+          font-size: 14px;
+          line-height: 1.8;
+        }
+        .quantity-block{
+          margin-top: 20px;
+          h4{
+            font-size: 17px;
+            font-weight: 400;
+          }
+          .content{
+            display: flex;
+            align-items: center;
+          }
+          .quantity{
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid $color-border;
+            width: 100px;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+            margin-right: 20px;
+            i{
+              color: $color-light-gray;
+              font-size: 10px;
+            }
+          }
+        }
+        ul{
+          margin-top: 20px;
+          display: flex;
+          li{
+            margin: 0 10px;
+            a{
+              i{
+                background-color: #f7f7f7;
+                padding: 10px;
+                border-radius: 50%;
+                color: $color-light-gray;
+                transition: all 0.3s linear;
+              }
+              span{
+                color: $color-light-gray;
+                font-size: 14px;
+                transition: all 0.3s linear;
+              }
+              &:hover > i, 
+              &:hover > span{
+                color: $main-color;
+              }
+            }
+          }
+        }
+      }
+    }
+    .share{
+      margin-top: 20px;
+      padding: 20px;
+      border-top: 1px solid $color-border;
+      display: flex;
+      ul{
+        display: flex;
+        li{
+          margin: 0 10px;
+          a{
+            i{
+              color: $color-black;
+              transition: all 0.3s linear;
+              &:hover{
+                color: $main-color;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

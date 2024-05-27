@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/all.min.css" />
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <!-- icon -->
+  <link rel="icon" href="./img/favicon.ico">
+  <title>Greens Garden</title>
+</head>
+
+<body>
+  <!-- start header -->
+  <header>
+    <div class="container">
+      <div class="top-header">
+        <ul>
+          <li>
+            <i class="fa-solid fa-phone"></i>
+            <span>Call Us:+201003573151</span>
+          </li>
+          <li>
+
+            <div class="dropdown ">
+              <div class="select">
+                <i class="fa-regular fa-user"></i>
+                <span>Account</span>
+                <i class="fa-solid fa-angle-down"></i>
+              </div>
+              <ul class="menu" id="not-existing-account">
+                <li><a href="./register.html">Register</a></li>
+                <li><a href="./login.html">Sign in</a></li>
+              </ul>
+              <ul class="menu" id="existing-account">
+                <li>Information</li>
+                <li>My Account</li>
+                <li><a href="./wishlist.html">My wishlists</a></li>
+                <li>Sign Out</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="wrapper-header">
+        <div class="wrraper-shopping-cart">
+          <div class="shopping-cart dropdown">
+            <div class="select">
+              <div class="img-icon">
+                <img src="./img/shopping-bag.png" alt="shopping-bag" />
+              </div>
+              <div class="text-shop ">
+                <div class="title">
+                  <span>Shopping Cart</span>
+                </div>
+                <div class="total-price">
+                  <span class="total-products-price">0</span>
+                  <span>-</span>
+                  <span class="number-product">0<span></span>item</span>
+                </div>
+
+              </div>
+            </div>
+            <div class="dropdown-menu menu">
+              <p class="empty-products">There are no items in your cart.</p>
+              <div class="items exist-products" id="exist-products">
+                <ul class="cart-products"></ul>
+                <div class="total">
+                  <span>total</span>
+                  <span class="total-products-price">0</span>
+                </div>
+                <div class="buttons">
+                  <button><a href="./check-out.html">check out</a></button>
+                  <button><a href="./cart.html">View Cart</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="logo">
+          <div class="img">
+            <img src="./img/logo.jpg" alt="logo-img" />
+          </div>
+        </div>
+        <div class="icons-header">
+          <div class="dropdown">
+            <div class="cart-icon">
+              <div class="select">
+                <i class="fa fa-shopping-bag"></i>
+                <span class="number-product">0</span>
+              </div>
+              <div class="dropdown-menu menu">
+                <p class="empty-products">There are no items in your cart.</p>
+                <div class="items exist-products" id="exist-products">
+                  <ul class="cart-products"></ul>
+                  <div class="total">
+                    <span>total</span>
+                    <span class="total-products-price">0</span>
+                  </div>
+                  <div class="buttons">
+                    <button><a href="./check-out.html">check out</a></button>
+                    <button><a href="./cart.html">View Cart</a></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="search">
+            <div class="icon-search" id="icon-search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="wrapper-search" id="wrapper-search">
+              <div class="wrapper-input-search">
+                <input type="search" placeholder="Search For Product..." id="search" />
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+              <div class="result">
+                <ul id="result">
+
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="nav" id="bars">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+      </div>
+      <div class="wrapper-nav-bar" id="navbar">
+        <div class="nav-bar" id="navbar-links">
+          <div class="top-nav-bar">
+            <i class="fa-solid fa-xmark" id="close"></i>
+          </div>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./flowers-products.html">Shop</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- end header -->
+  <section class="nav-links-page">
+    <div class="container">
+      <div class="links-page">
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <span>/</span>
+          <li><a href="./flowers-products.html" class="active">Flowers</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <!-- start section flowers -->
+  <!-- start section footer -->
+  <section class="flowers">
+    <div class="container">
+      <div class="wrapper-flowers">
+        <aside>
+          <div class="box">
+            <div class="head-box">
+              <h3><a href="#">FILTER BY</a></h3>
+            </div>
+            <div class="body-box">
+              <div class="dropdown">
+                <div class="filter-products select">
+                  <i class="fa-solid fa-angle-down caret"></i>
+                  <h4 class="heading-list">Categories</h4>
+                  <ul class="menu">
+                    <li>
+                      <input type="radio" id="all" name="category" value="all-flowers">
+                      <label for="all">All Flowers</label>
+                    </li>
+                    <li>
+                      <input type="radio" id="wedding" name="category" value="wedding">
+                      <label for="wedding">Wedding</label>
+                    </li>
+                    <li>
+                      <input type="radio" id="happy-birthday" name="category" value="happy-birthday">
+                      <label for="happy-birthday">Happy Birthday</label>
+                    </li>
+                    <li>
+                      <input type="radio" id="congratulation" name="category" value="congratulation">
+                      <label for="congratulation">Congratulation</label>
+                    </li>
+                    <li>
+                      <input type="radio" id="happy-anniversary" name="category" value="happy-anniversary">
+                      <label for="happy-anniversary">Happy Anniversary</label>
+                    </li>
+                    <li>
+                      <input type="radio" id="love-you" name="category" value="love-you">
+                      <label for="love-you">I Love You</label>
+                    </li>
+                    <li>
+                      <input type="radio" id="thank-you" name="category" value="thank-you">
+                      <label for="thank-you">Thank You</label>
+                    </li>
+                    <li>
+                      <input type="radio" id="baby-flowers" name="category" value="baby-flowers">
+                      <label for="baby-flowers">Baby Flowers</label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="dropdown">
+                <div class="filter-products select">
+                  <i class="fa-solid fa-angle-down caret" ></i>
+                  <h4 class="heading-list">Color</h4>
+                  <ul class="menu">
+                    <li>
+                      <input type="radio" id="all-colors" name="color" value="all-colors">
+                      <label for="all-colors">All Colors</label>
+                    </li>
+                    <li>
+                      <input type="radio" id="baby-blue" name="color" value="baby-blue">
+                      <label for="baby-blue">Baby Blue</label>
+                    </li>
+                    <li>
+                      <input type="radio" id="orange" name="color" value="orange">
+                      <label for="orange">Orange</label>
+                    </li>
+                    <li>
+                      <input type="radio" id="red" name="color" value="red">
+                      <label for="red">Red</label>
+                    </li>
+                    <li>
+                      <input type="radio" id="pink" name="color" value="pink">
+                      <label for="pink">Pink</label>
+                    </li>
+                    <li>
+                      <input type="radio" id="purple" name="color" value="purple">
+                      <label for="purple">Purple</label>
+                    </li>
+                    <li>
+                      <input type="radio" id="yellow" name="color" value="yellow">
+                      <label for="yellow">Yellow</label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="dropdown">
+                <div class="filter-products select">
+                  <i class="fa-solid fa-angle-down caret"></i>
+                  <h4 class="heading-list">Price</h4>
+                  <ul class="menu">
+                    <li>
+                      <input type="radio" id="All price" name="price" value="all-price">
+                      <label for="All price">All Price</label>
+                    </li>
+                    <li>
+                      <input type="radio" id="less-500" name="price" value="less-500">
+                      <label for="less-500">Less 500</label>
+                    </li>
+                    <li>
+                      <input type="radio" id="500-1000" name="price" value="500-1000"">
+                      <label for="500-1000">500 - 1000</label>
+                    </li>
+                    <li>
+                      <input type="radio" id="1000-1500" name="price" value="1000-1500">
+                      <label for="1000-1500">1000 - 1500</label>
+                    </li>
+                    <li>
+                      <input type="radio" id="over1500" name="price" value="over1500">
+                      <label for="over1500">Over 1500</label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </aside>
+        <div class="products" id="products">
+
+        </div>
+      </div>
+      <div id="wrapper-pagination">
+      </div>
+    </div>
+  <!-- end section flowers -->
+  <footer>
+    <div class="container">
+      <div class="wrapper-footer">
+        <div class="col">
+          <div class="groups-link">
+            <div class="group-link"">
+                  <h3>INFORMATION</h3>
+                  <ul>
+                    <li><a href=" #">Delivery</a></li>
+              <li><a href="#">Legal Notice</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Secure Payment</a></li>
+              <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="group-link"">
+                  <h3>MY ACCOUNT</h3>
+                  <ul>
+                    <li><a href=" #">Personal Info</a></li>
+              <li><a href="#">Orders</a></li>
+              <li><a href="#">Credit Slips</a></li>
+              <li><a href="#">Addresses</a></li>
+              <li><a href="#">My Wishlists</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="img">
+            <img src="./img/logo-light.png" alt="logo">
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt lorem consectetur
+            tempor incididunt enim ad minim simply random text. It has pieceveniam.</p>
+          <div class="social-media">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-google-plus-g"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-pinterest-p"></i>
+          </div>
+        </div>
+        <div class="col">
+          <h3>NEWSLETTER</h3>
+          <p>Subscribe to our newsletters now and stay up to date with new collections and exclusive offers.</p>
+          <div class="input-email">
+            <input type="email" name="email" id="email" placeholder="Your email address">
+            <button><i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+          <div class="copyright ">
+            Greated By <span>Magdy Alhadray</span>
+            <div>&copy;2024 - <span>Greens Garden</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- end section footer -->
+  <!-- start section more details -->
+  <div class="details">
+    <div class="content-details">
+      <div class="card-details">
+        <div class="img-product">
+          <img src="" alt="" class="img-details">
+        </div>
+        <div class="text-card">
+          <h3 class="name-product"></h3>
+          <div class="price">
+            <span class="price-product"></span>
+            <span>EGP</span>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit non tempora magni repudiandae sint suscipit tempore
+            quis maxime explicabo veniam eos reprehenderit fuga
+          </p>
+          <div class="quantity-block">
+            <h4>Quantity</h4>
+            <div class="content">
+              <div class="quantity">
+                <div class="wrapper-button-puls">
+                  <span class="plus">
+                    <i class="fa-solid fa-plus"></i>
+                  </span>
+                </div>
+                <div class="count-content">1</div>
+                <div class="wrapper-button-minus">
+                  <span class="minus">
+                    <i class="fa-solid fa-minus"></i>
+                  </span>
+                </div>
+              </div>
+              <button class='add' >ADD TO CART</button>
+            </div>
+            
+          </div>
+          <ul>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-heart"></i>
+                <span>Add To Wishlist</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-shuffle"></i>
+                <span>Add To Compare</span>
+              </a>
+            </li>
+          </ul>
+        </div>   
+      </div>
+      <div class="close-card-product">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+      <div class="share">
+        <span>share:</span>
+        <ul>
+          <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></li>
+        </ul>
+      </div>
+    </div>
+    
+  </div>
+  <!-- end section details -->
+  <div class="loading">
+    <div class="img">
+      <img src="./img/e13acccff048dbd34cdd7a3c539a68eb.gif" alt="loading">
+    </div>
+  </div>
+  <script src="./javascript/flowers-products.js" type="module"></script>
+</body>
+
+</html>

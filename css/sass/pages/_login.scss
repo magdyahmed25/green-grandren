@@ -1,0 +1,43 @@
+.login{
+  margin-bottom: 20px;
+  .personal-information{
+    background-color: $color-white;
+    border: 1px solid $color-border;
+    border-radius: 5px;
+    form{
+      border-bottom: 1px solid $color-border;
+    }
+    .submit-button{
+      display: flex;
+      justify-content: center;
+      margin: 20px 0;
+      input[type="submit"]{
+        border: none;
+        outline: none;
+        background-color: $main-color;
+        color: $color-white;
+        padding: 10px 20px;
+        border-radius: 20px;
+        font-size: 15px;
+        font-weight: 400;
+        text-transform: uppercase;
+        cursor: pointer;
+      }
+    }
+    .create-account{
+      padding: 20px 0;
+      display: flex;
+      justify-content: center;
+      p{
+        a{
+          color: #222222;
+          transition: all 0.3s linear;
+          &:hover{
+            color: $main-color;
+          }
+        }
+      }
+    }
+  }
+
+}

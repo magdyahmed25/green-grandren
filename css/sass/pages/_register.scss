@@ -1,0 +1,14 @@
+.message{
+  position: fixed;
+  background-color: hsla(0, 0%, 0%, 0.461);
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  .have-account{
+    background-color: $color-white;
+    padding: 50px;
+    font-weight: 500;
+    border-radius: 5px;
+  }
+}

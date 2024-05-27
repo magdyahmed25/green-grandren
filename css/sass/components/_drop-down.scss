@@ -1,0 +1,52 @@
+.dropdown{
+  position: relative;
+  .select{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    span{
+      display: inline-block;
+      margin: 0 5px;
+    }
+  }
+  .menu{
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    border-bottom: 4px solid #6bb42f;
+    text-align: center;
+    color: $color-black;
+    top:30px;
+    left:50%;
+    width: 150%;
+    transform: translateX(-50%);
+    opacity: 0;
+    display: none;
+    transition: width 0.2s linear;
+    z-index: -1;
+    @include maxExtraSmall{
+      left:0;
+      width: 100%;
+      transform: unset;
+    }
+  }
+  .menu li{
+    padding: 0.7em 0.5em;
+    margin: 0.3em 0;
+    border-radius:0.5em;
+    cursor: pointer;
+  }
+  .active{
+    background-color: #23242a;
+  }
+  .menu-open{
+    display: block;
+    opacity: 1;
+    z-index: 1;
+  }
+  #existing-account{
+    display: none;
+  }
+}
